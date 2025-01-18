@@ -42,7 +42,7 @@ h1 {
     padding: 50px;
     background: #1E90FF;
     color: white;
-    text-align: center; /* Centers all text inside the section */
+    text-align: right; /* Centers all text inside the section */
 }
 
 .service-container {
@@ -59,7 +59,7 @@ h1 {
     color: black;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
-    text-align: center; /* Ensures text is centered inside the service boxes */
+    text-align: right; /* Ensures text is centered inside the service boxes */
 }
 
 /* Portfolio Section */
