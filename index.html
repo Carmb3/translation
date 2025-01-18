@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <h1>Welcome to My Freelance Website</h1>
         <p>I offer professional services in [your field].</p>
@@ -17,6 +18,72 @@
         <p>Introduce yourself and what you do.</p>
     </section>
 
+    <section id="services">
+        <h2>My Services</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>Translation</h3>
+                <p>✔️ Accurate translations for businesses and individuals.</p>
+                <p>✔️ Specialized in legal, technical, and commercial documents.</p>
+                <p>✔️ Multilingual support with cultural adaptation.</p>
+            </div>
+            <div class="service">
+                <h3>Legalization</h3>
+                <p>✔️ Certified translations for official documents.</p>
+                <p>✔️ Assistance with apostille and notarization.</p>
+                <p>✔️ Legal compliance for international documents.</p>
+            </div>
+            <div class="service">
+                <h3>Localization</h3>
+                <p>✔️ Adapting content to different languages and cultures.</p>
+                <p>✔️ Website, software, and marketing material localization.</p>
+                <p>✔️ Ensuring brand consistency in global markets.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Brief description of the project.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Brief description of the project.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Brief description of the project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Fill out the form below, and I'll get back to you as soon as possible.</p>
+        
+        <form action="https://formsubmit.co/carmen.bobu.traductions@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://carmb3.github.io/translation/thank-you.html">
+            <input type="hidden" name="_captcha" value="false">
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        
+            <button type="submit">Send Message</button>
+        </form>        
+    </section>
+
     <footer>
         <p>Contact me at: your@email.com</p>
     </footer>
@@ -24,61 +91,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-<section id="services">
-    <h2>My Services</h2>
-    <div class="service-container">
-        <div class="service">
-            <h3>Service 1</h3>
-            <p>Brief description of the first service.</p>
-        </div>
-        <div class="service">
-            <h3>Service 2</h3>
-            <p>Brief description of the second service.</p>
-        </div>
-        <div class="service">
-            <h3>Service 3</h3>
-            <p>Brief description of the third service.</p>
-        </div>
-    </div>
-</section>
-
-<section id="portfolio">
-    <h2>My Portfolio</h2>
-    <div class="portfolio-container">
-        <div class="portfolio-item">
-            <img src="https://via.placeholder.com/300" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>Brief description of the project.</p>
-        </div>
-        <div class="portfolio-item">
-            <img src="https://via.placeholder.com/300" alt="Project 2">
-            <h3>Project 2</h3>
-            <p>Brief description of the project.</p>
-        </div>
-        <div class="portfolio-item">
-            <img src="https://via.placeholder.com/300" alt="Project 3">
-            <h3>Project 3</h3>
-            <p>Brief description of the project.</p>
-        </div>
-    </div>
-</section>
-<section id="contact">
-        <h2>Contact Me</h2>
-        <p>Fill out the form below, and I'll get back to you as soon as possible.</p>
-        
-        <form action="https://formsubmit.co/carmen.bobu.traductions@gmail.com" method="POST">
-            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
-            <input type="hidden" name="_captcha" value="false">
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
