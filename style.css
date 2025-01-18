@@ -42,7 +42,7 @@ h1 {
     padding: 50px;
     background: #1E90FF;
     color: white;
-    text-align: left; /* Centers all text inside the section */
+    text-align: center; /* Centers all text inside the section */
 }
 
 .service-container {
