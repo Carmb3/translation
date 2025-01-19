@@ -4,45 +4,110 @@ body {
     margin: 0;
     padding: 0;
     background-color: #E3F2FD;
-    text-align: center;
 }
 
-/* Header with Title and Button */
+/* Container to prevent movement on resizing */
+.container {
+    max-width: 100%; /* Set a maximum width */
+    margin: 0 auto; /* Centers content */
+    padding: 0 20px; /* Adds padding to avoid touching edges */
+}
+
+/* Header Layout */
 header {
     background: white;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1) !important;
+    flex-wrap: nowrap; /* Prevents elements from wrapping */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1) !important;
 }
 
+/* Title and Subtitle */
 h1 {
-    font-size: 32px; /* Adjust size of the main title */
+    font-size: 32px;
     font-weight: bold;
-    display: inline-block; /* Keeps both elements on the same line */
+    flex-grow: 1; /* Pushes right-side elements */
+    text-align: left;
+    margin-left: 15px;
+    white-space: nowrap; /* Prevents title from breaking into multiple lines */
 }
 
 .undertitle {
-    font-size: 12px; /* Smaller size for "By Carmen" */
-    font-style: italic; /* Italic style */
-    color: #333333; /* Change text color */
-    font-weight: 400; /* Adjust thickness */
-    margin-left: 3px; /* Add space between "Elite Translations" and "By Carmen" */
+    font-size: 12px;
+    font-style: italic;
+    color: #333;
+    font-weight: 400;
+    margin-left: 3px;
 }
-/* Request a Free Quote Button */
+
+/* Align right-side elements */
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures language buttons stay centered */
+    margin-right: 15px;
+}
+
+/* Quote Button */
 .quote-button {
     background: #FF9800;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-bottom: 2px; /* Space before language buttons */
 }
 
 .quote-button:hover {
     background: #e68900;
+}
+
+/* Language Buttons */
+.language-buttons {
+    display: flex;
+    gap: 2mm;
+}
+
+.lang-btn {
+    width: 0.5cm;
+    height: 0.5cm;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 10px; /* Smaller font */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lang-btn:hover {
+    background-color: #FF9800;
+}
+body {
+    padding-top: 92px; /* Adjust based on header height */
+}
+/* About Me Section */
+#about {
+    text-align: center;
+    padding: 10px;
+    background: #E3F2FD;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 /* Services Section */
@@ -50,7 +115,9 @@ h1 {
     padding: 50px;
     background: #1E90FF;
     color: white;
-    text-align: center; /* Centers all text inside the section */
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .service-container {
@@ -67,17 +134,22 @@ h1 {
     color: black;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
+/* Ensure service titles are centered */
 .service h3 {
-    text-align: center; /* Keep titles centered */
+    width: 100%;
+    text-align: center;
 }
 
 /* Portfolio Section */
 #portfolio {
     background: white;
     padding: 50px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .portfolio-container {
@@ -85,6 +157,7 @@ h1 {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .portfolio-item {
@@ -92,6 +165,7 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     width: 300px;
+    text-align: center;
 }
 
 .portfolio-item img {
@@ -101,8 +175,11 @@ h1 {
 
 /* Contact Section */
 #contact {
-    background: #f4f4f4;
-    padding: 50px;
+    background: #d9f2f7;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 form {
@@ -116,35 +193,34 @@ form {
 
 label {
     display: block;
-    margin: 10px 0 5px;
+    text-align: center;
     font-weight: bold;
 }
 
 /* General Input Fields */
 #name,
 #email {
-    width: 100%;
-    height: 35px; /* Set the height for Name & Email */
+    width: 95%;
+    height: 15px;
     padding: 10px;
     margin-bottom: 15px;
-    margin-left: -12px;
     border: 2px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 16px;
 }
 
 /* Message Textarea */
 #message {
-    width: 100%;
-    height: 100px; /* Set the height for Message */
+    width: 95%;
+    height: 100px;
     padding: 10px;
     margin-bottom: 15px;
-    margin-left: -12px;
     border: 2px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    resize: none !important; /* Prevent manual resizing */
-    overflow-y: auto; /* Adds scrollbar when text is too long */
+    resize: none !important;
+    overflow-y: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Submit Button */
@@ -163,10 +239,10 @@ button:hover {
     background: #FF9800;
 }
 
-/* Button Container for Centering */
+/* Button Container */
 .button-container {
-    text-align: center; /* Ensures the button stays centered */
-    margin-top: 20px; /* Adjust this value to lower the button */
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* Footer */
@@ -175,6 +251,9 @@ footer {
     color: white;
     padding: 10px;
     margin-top: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Responsive Design */
