@@ -28,7 +28,7 @@ h1 {
     font-style: italic; /* Italic style */
     color: #333333; /* Change text color */
     font-weight: 400; /* Adjust thickness */
-    margin-left: 5px; /* Add space between "Elite Translations" and "By Carmen" */
+    margin-left: 3px; /* Add space between "Elite Translations" and "By Carmen" */
 }
 /* Request a Free Quote Button */
 .quote-button {
