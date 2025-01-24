@@ -5,7 +5,9 @@ body {
     padding: 0;
     background-color: #E3F2FD;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 /* Container to prevent movement on resizing */
 .container {
     max-width: 100%; /* Set a maximum width */
@@ -46,6 +48,31 @@ h1 {
     color: #333;
     font-weight: 400;
     margin-left: 3px;
+}
+/* Center Header Buttons */
+.header-buttons {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    position: relative; 
+}
+/* Navigation Buttons */
+.nav-btn {
+    background: #1E90FF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #FF9800;
 }
 
 /* Align right-side elements */
@@ -102,14 +129,143 @@ body {
     padding-top: 92px; /* Adjust based on header height */
 }
 /* About Me Section */
+/* About Section Styling */
+/* About Section Styling */
 #about {
+    background: #f9f9f9;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center; /* Ensures section stays centered */
+}
+
+/* Container for Consistent Width */
+.container {
+    width: 80%;
+    max-width: 1100px;
+    min-width: 800px; /* Prevents shrinking too much */
+    margin: auto;
+}
+
+/* Two-Column Layout */
+.about-content {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents text stacking until necessary */
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Section */
+.about-text {
+    flex: 1;
+    min-width: 400px; /* Prevents excessive shrinking */
+    max-width: 550px; /* Keeps structure balanced */
+    text-align: left;
+    padding: 20px;
+}
+
+/* Headings */
+.about-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
     text-align: center;
-    padding: 10px;
-    background: #E3F2FD;
-    max-width: 100%;
-    margin: 0 auto;
+}
+
+.about-text h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 20px;
+}
+
+/* Paragraph */
+.about-text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Services List */
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.services-list li {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 5px 0;
+    display: flex;
     align-items: center;
 }
+
+.services-list li::before {
+    content: "✔";
+    color: #0073e6;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Image Section */
+.about-image {
+    flex: 1;
+    min-width: 350px;
+    max-width: 450px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Call-to-Action Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #0073e6;
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #005bb5;
+}
+
+/* Responsive Fix: Only Stack on Very Small Screens */
+@media (max-width: 850px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .about-text {
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .services-list li {
+        justify-content: center;
+    }
+
+    .about-image {
+        margin-top: 20px;
+    }
+}
+
+
 
 /* Services Section */
 #services {
