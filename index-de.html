@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Translations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header with Title, Navigation Buttons & Quote Button -->
+    <header>
+        <h1>
+            Elite Translations 
+            <span class="undertitle">By Carmen</span>
+        </h1>
+
+        <!-- Navigation Buttons -->
+        <div class="header-buttons">
+            <button class="nav-btn" onclick="scrollToSection('services')">Dienstleistungen</button>
+            <button class="nav-btn" onclick="scrollToSection('portfolio')">Portfolio</button>
+            <button class="nav-btn" onclick="scrollToSection('contact')">Kontakt</button>
+            <button class="nav-btn" onclick="scrollToSection('about')"> Über mich</button>
+        </div>
+
+        <!-- Quote Button & Language Buttons -->
+        <div class="header-right">
+            <button class="quote-button">Fordern Sie ein kostenloses Angebot an</button>
+            <div class="language-buttons">
+                <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
+                <button class="lang-btn" onclick="changeLanguage('de')">DE</button>
+                <button class="lang-btn" onclick="changeLanguage('ro')">RO</button>
+                <button class="lang-btn" onclick="changeLanguage('it')">IT</button>
+            </div>
+            
+        </div>
+    </header>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="about-content">
+            <!-- Left Side: Text -->
+            <div class="about-text">
+                <h2>Über mich</h2>
+                <p>
+                    Ich bin <strong>freiberuflicher Übersetzer</strong> mit einer Leidenschaft für Sprachen, Präzision und Kommunikation.
+                    Ich habe einen <strong>Bachelor-Abschluss in Übersetzen und Dolmetschen (Englisch & Deutsch)</strong> von der
+                    <em>Université libre de Bruxelles (2019)</em> sowie ein <strong>Zertifikat in Rechtskenntnissen für vereidigte Übersetzer</strong> von der
+                    <em>Université catholique de Louvain (2020)</em>.
+                </p>
+                <p>
+                    Seitdem arbeite ich mit <strong>privaten Kunden, öffentlichen Institutionen und internationalen Agenturen</strong> 
+                    an einer Vielzahl von Projekten. Ich schätze die Vielfalt meiner Arbeit und liebe es, neue Fachgebiete zu erkunden.
+                </p>
+                
+                <h3>Fachgebiete & Dienstleistungen</h3>
+                <ul class="services-list">
+                    <li> <strong>Übersetzung </strong></li>
+                    <li> <strong>Lektorat & Korrekturlesen</strong></li>
+                    <li> <strong>Desktop Publishing (DTP)</strong></li>
+                    <li> <strong>Lokalisierung </strong></li>
+                </ul>
+                
+                <p>
+                    Ich lege großen Wert darauf, <strong>high-quality, accurate, and culturally adapted translationshochwertige, präzise und kulturell angepasste Übersetzungen </strong> 
+                    bereitzustellen, um meinen Kunden eine effektive Kommunikation über verschiedene Sprachen und Branchen hinweg zu ermöglichen.
+                </p>
+                
+                <a href="#contact" class="btn">📩 Lassen Sie uns zusammenarbeiten!</a>
+            </div>
+
+            <!-- Right Side: Image -->
+            <div class="about-image">
+                <img src="about-me.jpg" alt="Translator at work">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Dienstleistungen</h2>
+        <div class="service-container">
+            <div class="service">
+                <h3>Übersetzung</h3>
+                <p>✔️ Präzise Übersetzungen für Unternehmen und Privatpersonen.</p>
+                <p>✔️ Spezialisiert auf juristische, technische und kommerzielle Dokumente.</p>
+                <p>✔️ Mehrsprachige Unterstützung mit kultureller Anpassung.</p>
+            </div>
+            <div class="service">
+                <h3>Legalisierung</h3>
+                <p>✔️ Beglaubigte Übersetzungen für offizielle Dokumente.</p>
+                <p>✔️ Unterstützung bei Apostille und Legalisierung.</p>
+                <p>✔️ Rechtliche Konformität für internationale Dokumente.</p>
+            </div>
+            <div class="service">
+                <h3>Lokalisierung</h3>
+                <p>✔️ Anpassung von Inhalten an verschiedene Sprachen und Kulturen.</p>
+                <p>✔️ Lokalisierung von Websites, Software und Marketingmaterialien.</p>
+                <p>✔️ Sicherstellung der Markenkonsistenz auf globalen Märkten.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Brief description of the project.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Brief description of the project.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Brief description of the project.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Kontaktieren Sie mich</h2>
+        <p>Füllen Sie das untenstehende Formular aus, und ich werde mich so schnell wie möglich bei Ihnen melden.</p>
+        
+        <form action="https://formsubmit.co/carmen@elite-translations.com" method="POST">
+            <input type="hidden" name="_next" value="https://carmb3.github.io/translation/thank-you.html">
+            <input type="hidden" name="_captcha" value="false">
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <div class="button-container">
+                <button type="submit">Nachricht senden</button>
+            </div>
+        </form>       
+    </section>
+
+    <footer>
+        <p>Kontaktieren Sie mich unter: carmen@elite-translations.com</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
