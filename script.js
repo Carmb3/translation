@@ -55,30 +55,16 @@ function scrollToSection(sectionId) {
 
 // Language switch function
 function changeLanguage(lang) {
-    let baseUrl = window.location.origin + window.location.pathname;
-
-    // Remove "index.html" if present in the URL
-    baseUrl = baseUrl.replace(/index\.html$/, "");
-
+    let currentPath = window.location.pathname;
+    let basePath = currentPath.replace(/index-[a-z]{2}\.html$/, "").replace(/index\.html$/, "");
+    
     console.log(`🌍 Switching language to: ${lang}`);
-    console.log("🔗 Redirecting to:", baseUrl + `index-${lang}.html`);
+    let newURL = basePath + `index-${lang}.html`;
 
-    // Redirect based on the selected language
-    switch (lang) {
-        case 'fr':
-            window.location.href = baseUrl + "index-fr.html";
-            break;
-        case 'de':
-            window.location.href = baseUrl + "index-de.html";
-            break;
-        case 'ro':
-            window.location.href = baseUrl + "index-ro.html";
-            break;
-        case 'it':
-            window.location.href = baseUrl + "index-it.html";
-            break;
-        default:
-            window.location.href = baseUrl + "index.html"; // Default to English
+    if (lang === "en") {
+        newURL = basePath + "index.html";
     }
-}
 
+    console.log("🔗 Redirecting to:", newURL);
+    window.location.href = newURL;
+}
