@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,22 +17,23 @@
 
         <!-- Navigation Buttons -->
         <div class="header-buttons">
-            <button class="nav-btn" onclick="scrollToSection('services')">Services</button>
-            <button class="nav-btn" onclick="scrollToSection('portfolio')">Portfolio</button>
+            <button class="nav-btn" onclick="scrollToSection('services')">Servicii</button>
+            <button class="nav-btn" onclick="scrollToSection('portfolio')">Portfoliu</button>
             <button class="nav-btn" onclick="scrollToSection('contact')">Contact</button>
-            <button class="nav-btn" onclick="scrollToSection('about')">About</button>
+            <button class="nav-btn" onclick="scrollToSection('about')">Despre mine</button>
         </div>
 
         <!-- Quote Button & Language Buttons -->
         <div class="header-right">
-            <button class="quote-button">Request a Free Quote</button>
+            <button class="quote-button">Solicită o ofertă gratuită</button>
             <div class="language-buttons">
-                <button class="lang-btn">EN</button>
-                <button class="lang-btn">FR</button>
-                <button class="lang-btn">DE</button>
-                <button class="lang-btn">RO</button>
-                <button class="lang-btn">IT</button>
+                <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
+                <button class="lang-btn" onclick="changeLanguage('de')">DE</button>
+                <button class="lang-btn" onclick="changeLanguage('ro')">RO</button>
+                <button class="lang-btn" onclick="changeLanguage('it')">IT</button>
             </div>
+            
         </div>
     </header>
 
@@ -42,32 +43,32 @@
         <div class="about-content">
             <!-- Left Side: Text -->
             <div class="about-text">
-                <h2>About Me</h2>
+                <h2>Despre mine</h2>
                 <p>
-                    I am a <strong>freelance translator</strong> with a passion for languages, precision, and communication. 
-                    I hold a <strong>Bachelor’s degree in Translation and Interpreting (English & German)</strong> from the 
-                    <em>Université libre de Bruxelles (2019)</em> and a <strong>Certificate of Legal Knowledge for Sworn Translators</strong> from the 
+                    Sunt un <strong>traducător freelancer</strong> pasionată de limbi străine, precizie și comunicare.
+                    Dețin o <strong> diplomă de licență în Traducere și Interpretariat (Engleză & Germană) </strong> de la
+                    <em>Université libre de Bruxelles (2019)</em> și un <strong>Certificat de Cunoștințe Juridice pentru Traducători Autorizați </strong> de la 
                     <em>Université catholique de Louvain (2020)</em>.
                 </p>
                 <p>
-                    Since then, I have been working with <strong>private clients, public institutions, and international agencies</strong> 
-                    on a variety of projects. I thrive on the diversity of my work and love exploring new fields.
+                    De atunci, colaborez cu <strong>clienți privați, instituții publice și agenții internaționale </strong> 
+                    în diverse proiecte. Îmi place diversitatea muncii mele și ador să explorez noi domenii.
                 </p>
                 
-                <h3>Expertise & Services</h3>
+                <h3>Expertiză & Servicii</h3>
                 <ul class="services-list">
-                    <li> <strong>Translation  </strong></li>
-                    <li> <strong>Revision & Proofreading </strong></li>
-                    <li> <strong>Desktop Publishing (DTP)</strong></li>
-                    <li> <strong>Localization  </strong></li>
+                    <li> <strong>Traduceri </strong></li>
+                    <li> <strong>Revizii & Corectură </strong></li>
+                    <li> <strong>Publicare Desktop (DTP)</strong></li>
+                    <li> <strong>Localizare </strong></li>
                 </ul>
                 
                 <p>
-                    I am committed to delivering <strong>high-quality, accurate, and culturally adapted translations</strong> 
-                    to help my clients communicate effectively across languages and industries.
+                    Sunt dedicată livrării unor  <strong>traduceri de înaltă calitate, precise și adaptate cultural,</strong> 
+                    pentru a ajuta clienții mei să comunice eficient în diverse limbi și industrii.
                 </p>
                 
-                <a href="#contact" class="btn">📩 Let’s work together!</a>
+                <a href="#contact" class="btn">📩 Hai să lucrăm împreună!</a>
             </div>
 
             <!-- Right Side: Image -->
@@ -84,22 +85,22 @@
         <h2>Services</h2>
         <div class="service-container">
             <div class="service">
-                <h3>Translation</h3>
-                <p>✔️ Accurate translations for businesses and individuals.</p>
-                <p>✔️ Specialized in legal, technical, and commercial documents.</p>
-                <p>✔️ Multilingual support with cultural adaptation.</p>
+                <h3>Traducere</h3>
+                <p>✔️ Traduceri precise pentru societăți și persoane fizice.</p>
+                <p>✔️ Specializare în documente juridice, tehnice și comerciale</p>
+                <p>✔️ Asistență multilingvă cu adaptare culturală</p>
             </div>
             <div class="service">
-                <h3>Legalization</h3>
-                <p>✔️ Certified translations for official documents.</p>
-                <p>✔️ Assistance with apostille and notarization.</p>
-                <p>✔️ Legal compliance for international documents.</p>
+                <h3>Legalizare</h3>
+                <p>✔️ Traduceri legalizate pentru documente oficiale.</p>
+                <p>✔️ Asistență pentru apostilă și legalizare.</p>
+                <p>✔️ Conformitate juridică pentru documente internaționale.</p>
             </div>
             <div class="service">
-                <h3>Localization</h3>
-                <p>✔️ Adapting content to different languages and cultures.</p>
-                <p>✔️ Website, software, and marketing material localization.</p>
-                <p>✔️ Ensuring brand consistency in global markets.</p>
+                <h3>Localizare</h3>
+                <p>✔️ Adaptarea conținutului la diferite limbi și culturi.</p>
+                <p>✔️ Localizare pentru site-uri web, software și materiale de marketing.</p>
+                <p>✔️ Asigurarea coerenței brandului pe piețele internaționale.</p>
             </div>
         </div>
     </section>
@@ -128,33 +129,32 @@
 
     <!-- Contact Form Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Fill out the form below, and I'll get back to you as soon as possible.</p>
+        <h2>Contactați-mă</h2>
+        <p>Completați formularul de mai jos, și vă voi răspunde în cel mai scurt timp posibil.</p>
         
         <form action="https://formsubmit.co/carmen@elite-translations.com" method="POST">
             <input type="hidden" name="_next" value="https://carmb3.github.io/translation/thank-you.html">
             <input type="hidden" name="_captcha" value="false">
         
-            <label for="name">Name:</label>
+            <label for="name">Nume:</label>
             <input type="text" id="name" name="name" required>
         
-            <label for="email">Email:</label>
+            <label for="email">Mail:</label>
             <input type="email" id="email" name="email" required>
         
-            <label for="message">Message:</label>
+            <label for="message">Mesaj:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
             <div class="button-container">
-                <button type="submit">Send Message</button>
+                <button type="submit">Trimite mesaj</button>
             </div>
         </form>       
     </section>
 
     <footer>
-        <p>Contact me at: carmen@elite-translations.com</p>
+        <p>Contactați-mă la: carmen@elite-translations.com</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
-
