@@ -326,8 +326,11 @@ body {
 }
 
 .portfolio-item img {
-    width: 100%;
-    border-radius: 10px;
+    width: 150px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: contain; /* Ensures logos are properly scaled */
+    display: block;
+    margin: 0 auto; /* Centers images */
 }
 
 /* Contact Section */
