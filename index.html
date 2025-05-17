@@ -1,186 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Elite Translations</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <!-- Or use PNG if preferred -->
-    <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
-
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Disable right-click and F12 -->
-    <script>
+  <script>
       document.addEventListener('contextmenu', event => event.preventDefault());
       document.onkeydown = function(e) {
-        if (
-          e.key === "F12" ||
-          (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") ||
-          (e.ctrlKey && e.key.toLowerCase() === "u")
-        ) {
+        if (e.key === "F12" || 
+            (e.ctrlKey && e.shiftKey && e.key === "I") || 
+            (e.ctrlKey && e.key === "u")) {
           e.preventDefault();
           return false;
         }
       };
     </script>
-  </head>
+  <title>Elite Translations</title>
 
-            Elite Translations 
-            <span class="undertitle">By Carmen</span>
-        </h1>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- OR if you use PNG -->
+  <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
 
-        <!-- Navigation Buttons -->
-        <div class="header-buttons">
-            <button class="nav-btn" onclick="scrollToSection('services')">Services</button>
-            <button class="nav-btn" onclick="scrollToSection('portfolio')">Portfolio</button>
-            <button class="nav-btn" onclick="scrollToSection('contact')">Contact</button>
-            <button class="nav-btn" onclick="scrollToSection('about')">About</button>
-        </div>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
 
-        <!-- Quote Button & Language Buttons -->
-        <div class="header-right">
-            <button class="quote-button" 
-             onclick="window.location.href='mailto:carmen@elite-translations.com?subject=Request%20for%20a%20Free%20Quote&body=Hello%20Carmen,%0D%0A%0D%0AI%20would%20like%20to%20request%20a%20free%20quote%20for%20a%20translation.%20Here%20are%20the%20details:%0D%0A%0D%0A-%20Source%20Language:%0D%0A-%20Target%20Language:%0D%0A-%20Document%20Type:%0D%0A-%20Deadline:%0D%0A%0D%0A%2A%2APlease%20attach%20the%20file%20you%20need%20translated.%2A%2A%0D%0A%0D%0AThank%20you,%0D%0A[Your%20Name]';">
-             Request a Free Quote
-            </button>
+<body>
 
-            <div class="language-buttons">
-                <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
-                <button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
-                <button class="lang-btn" onclick="changeLanguage('de')">DE</button>
-                <button class="lang-btn" onclick="changeLanguage('ro')">RO</button>
-                <button class="lang-btn" onclick="changeLanguage('it')">IT</button>
-            </div>
-            
-        </div>
-    </header>
+<!-- Header with Title, Navigation Buttons & Quote Button -->
+<header>
+<h1>
+Elite Translations 
+<span class="undertitle">By Carmen</span>
+</h1>
+
+<!-- Navigation Buttons -->
+<div class="header-buttons">
+<button class="nav-btn" onclick="scrollToSection('services')">Services</button>
+<button class="nav-btn" onclick="scrollToSection('portfolio')">Portfolio</button>
+<button class="nav-btn" onclick="scrollToSection('contact')">Contact</button>
+<button class="nav-btn" onclick="scrollToSection('about')">About</button>
+</div>
+
+<!-- Quote Button & Language Buttons -->
+<div class="header-right">
+<button class="quote-button" 
+onclick="window.location.href='mailto:carmen@elite-translations.com?subject=Request%20for%20a%20Free%20Quote&body=Hello%20Carmen,%0D%0A%0D%0AI%20would%20like%20to%20request%20a%20free%20quote%20for%20a%20translation.%20Here%20are%20the%20details:%0D%0A%0D%0A-%20Source%20Language:%0D%0A-%20Target%20Language:%0D%0A-%20Document%20Type:%0D%0A-%20Deadline:%0D%0A%0D%0A%2A%2APlease%20attach%20the%20file%20you%20need%20translated.%2A%2A%0D%0A%0D%0AThank%20you,%0D%0A[Your%20Name]';">
+Request a Free Quote
+</button>
+
+<div class="language-buttons">
+<button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+<button class="lang-btn" onclick="changeLanguage('fr')">FR</button>
+<button class="lang-btn" onclick="changeLanguage('de')">DE</button>
+<button class="lang-btn" onclick="changeLanguage('ro')">RO</button>
+<button class="lang-btn" onclick="changeLanguage('it')">IT</button>
+</div>
+
+</div>
+</header>
 
 <!-- About Section -->
 <section id="about">
-    <div class="container">
-        <div class="about-content">
-            <!-- Left Side: Text -->
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>
-                    I am a <strong>freelance translator</strong> with a passion for languages, precision, and communication. 
-                    I hold a <strong>Bachelor’s degree in Translation and Interpreting (English & German)</strong> from the 
-                    <em>Université libre de Bruxelles (2019)</em> and a <strong>Certificate of Legal Knowledge for Sworn Translators</strong> from the 
-                    <em>Université catholique de Louvain (2020)</em>.
-                </p>
-                <p>
-                    Since then, I have been working with <strong>private clients, public institutions, and international agencies</strong> 
-                    on a variety of projects. I thrive on the diversity of my work and love exploring new fields.
-                </p>
-                
-                <h3>Expertise & Services</h3>
-                <ul class="services-list">
-                    <li> <strong>Translation  </strong></li>
-                    <li> <strong>Revision & Proofreading </strong></li>
-                    <li> <strong>Desktop Publishing (DTP)</strong></li>
-                    <li> <strong>Localization  </strong></li>
-                </ul>
-                
-                <p>
-                    I am committed to delivering <strong>high-quality, accurate, and culturally adapted translations</strong> 
-                    to help my clients communicate effectively across languages and industries.
-                </p>
-                
-                <a href="#contact" class="btn">📩 Let’s work together!</a>
-            </div>
+<div class="container">
+<div class="about-content">
+<!-- Left Side: Text -->
+<div class="about-text">
+<h2>About Me</h2>
+<p>
+I am a <strong>freelance translator</strong> with a passion for languages, precision, and communication. 
+I hold a <strong>Bachelor’s degree in Translation and Interpreting (English & German)</strong> from the 
+<em>Université libre de Bruxelles (2019)</em> and a <strong>Certificate of Legal Knowledge for Sworn Translators</strong> from the 
+<em>Université catholique de Louvain (2020)</em>.
+</p>
+<p>
+Since then, I have been working with <strong>private clients, public institutions, and international agencies</strong> 
+on a variety of projects. I thrive on the diversity of my work and love exploring new fields.
+</p>
 
-            <!-- Right Side: Image -->
-            <div class="about-image">
-                <img src="about-me.jpg" alt="Elite Translations">
-            </div>
-        </div>
-    </div>
+<h3>Expertise & Services</h3>
+<ul class="services-list">
+<li> <strong>Translation  </strong></li>
+<li> <strong>Revision & Proofreading </strong></li>
+<li> <strong>Desktop Publishing (DTP)</strong></li>
+<li> <strong>Localization  </strong></li>
+</ul>
+
+<p>
+I am committed to delivering <strong>high-quality, accurate, and culturally adapted translations</strong> 
+to help my clients communicate effectively across languages and industries.
+</p>
+
+<a href="#contact" class="btn">📩 Let’s work together!</a>
+</div>
+
+<!-- Right Side: Image -->
+<div class="about-image">
+<img src="about-me.jpg" alt="Elite Translations">
+</div>
+</div>
+</div>
 </section>
 
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Services</h2>
-        <div class="service-container">
-            <div class="service">
-                <h3>Translation</h3>
-                <p>✔️ Accurate translations for businesses and individuals.</p>
-                <p>✔️ Specialized in legal, technical, and commercial documents.</p>
-                <p>✔️ Multilingual support with cultural adaptation.</p>
-            </div>
-            <div class="service">
-                <h3>Legalization</h3>
-                <p>✔️ Certified translations for official documents.</p>
-                <p>✔️ Assistance with apostille and legalization.</p>
-                <p>✔️ Legal compliance for international documents.</p>
-            </div>
-            <div class="service">
-                <h3>Localization</h3>
-                <p>✔️ Adapting content to different languages and cultures.</p>
-                <p>✔️ Website, software, and marketing material localization.</p>
-                <p>✔️ Ensuring brand consistency in global markets.</p>
-            </div>
-        </div>
-    </section>
+<!-- Services Section -->
+<section id="services">
+<h2>Services</h2>
+<div class="service-container">
+<div class="service">
+<h3>Translation</h3>
+<p>✔️ Accurate translations for businesses and individuals.</p>
+<p>✔️ Specialized in legal, technical, and commercial documents.</p>
+<p>✔️ Multilingual support with cultural adaptation.</p>
+</div>
+<div class="service">
+<h3>Legalization</h3>
+<p>✔️ Certified translations for official documents.</p>
+<p>✔️ Assistance with apostille and legalization.</p>
+<p>✔️ Legal compliance for international documents.</p>
+</div>
+<div class="service">
+<h3>Localization</h3>
+<p>✔️ Adapting content to different languages and cultures.</p>
+<p>✔️ Website, software, and marketing material localization.</p>
+<p>✔️ Ensuring brand consistency in global markets.</p>
+</div>
+</div>
+</section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-container">
-            <div class="portfolio-item">
-                <img src="Amazon.png" alt="">
-                <h3></h3>
-                <p></p>
-            </div>
-            <div class="portfolio-item">
-                <img src="Deloitte.png" alt="">
-                <h3></h3>
-                <p></p>
-            </div>
-            <div class="portfolio-item">
-                <img src="Uber.png" alt="">
-                <h3></h3>
-                <p></p>
-            </div>
-        </div>
-    </section>
+<!-- Portfolio Section -->
+<section id="portfolio">
+<h2>Portfolio</h2>
+<div class="portfolio-container">
+<div class="portfolio-item">
+<img src="Amazon.png" alt="">
+<h3></h3>
+<p></p>
+</div>
+<div class="portfolio-item">
+<img src="Deloitte.png" alt="">
+<h3></h3>
+<p></p>
+</div>
+<div class="portfolio-item">
+<img src="Uber.png" alt="">
+<h3></h3>
+<p></p>
+</div>
+</div>
+</section>
 
-    <!-- Contact Form Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Fill out the form below, and I'll get back to you as soon as possible.</p>
-        
-        <form action="https://formsubmit.co/carmen@elite-translations.com" method="POST">
-            <input type="hidden" name="_next" value="https://carmb3.github.io/translation/thank-you.html">
-            <input type="hidden" name="_captcha" value="false">
-        
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+<!-- Contact Form Section -->
+<section id="contact">
+<h2>Contact Me</h2>
+<p>Fill out the form below, and I'll get back to you as soon as possible.</p>
 
-            <div class="button-container">
-                <button type="submit">Send Message</button>
-            </div>
-        </form>       
-    </section>
+<form action="https://formsubmit.co/carmen@elite-translations.com" method="POST">
+<input type="hidden" name="_next" value="https://carmb3.github.io/translation/thank-you.html">
+<input type="hidden" name="_captcha" value="false">
 
-    <footer>
-         <p>
-    &copy; 2025 Elite Translations | 
-    <a href="conditions.html" style="color: #ddd; text-decoration: underline;">Conditions Générales de Vente</a>
-  </p>
-    </footer>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
 
-    <script src="script.js" defer></script>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+
+<div class="button-container">
+<button type="submit">Send Message</button>
+</div>
+</form>       
+</section>
+
+<footer>
+<p>
+&copy; 2025 Elite Translations | 
+<a href="conditions.html" style="color: #ddd; text-decoration: underline;">Conditions Générales de Vente</a>
+</p>
+</footer>
+
+<script src="script.js" defer></script>
 </body>
 </html>
