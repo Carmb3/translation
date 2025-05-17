@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>Elite Translations</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <!-- OR if you use PNG -->
+    <!-- Or use PNG if preferred -->
     <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Disable right-click and F12 -->
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+      document.onkeydown = function(e) {
+        if (
+          e.key === "F12" ||
+          (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") ||
+          (e.ctrlKey && e.key.toLowerCase() === "u")
+        ) {
+          e.preventDefault();
+          return false;
+        }
+      };
+    </script>
   </head>
 
             Elite Translations 
